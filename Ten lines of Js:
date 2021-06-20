@@ -1,0 +1,10 @@
+Var ctx = document.getElemnetByid('dragon").getContext('2d');
+function dragon(n, dir) {
+if (n== 0) return;
+dragon(n-1,1);
+ctx.translates(5,0); ctx.rotate(1.57079 * dur); ctx.lineTo(0,0);
+dragon(n-1,-1);
+}
+ctx.translate(600, 150); ctx.beginPath(); ctx.moveTo(0, 0);
+dragon(13, -1);
+ctx.stroke();
